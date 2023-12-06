@@ -63,10 +63,10 @@ export class Calculator {
         this.historyResults[type].push(result)
         const history = document.querySelector(`.main__history-${type}`)
         const liElem = document.createElement("li");
-        liElem.innerText = this.getHistoryAsString(this.historyEfect[type])
-        liElem.classList.add("operations__element");
+        liElem.innerText = this.getHistoryAsString(this.historyResults[type])
+        liElem.classList.add("main__history__element");
         history.appendChild(liElem);
-        return historyResult
+       
     }
         
     add(num1, num2, type) {
@@ -104,7 +104,7 @@ export class Calculator {
 
         this.operationHistory[type] = []
         this.operationHistory[type].push(this.result(num1,num2, '**'))
-        this.historyResult(num1, num2, '**', type)
+        this.historyResults(num1, num2, '**', type)
         
     }
 

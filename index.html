@@ -10,6 +10,7 @@
 </head>
 
 <body class="main-content">
+  <h4 class="mobile-title">Let's see this website on desktop</h4>
   <header class="header">
     <h1 class="header__heading heading">
       <span class="header__heading--main">Calculator</span>
@@ -24,7 +25,7 @@
   </header>
   <main class="main">
     <form id="form" class="main__form form">
-      <label for="form__label" class="form__label">Choice the operation you want to perform</label>
+      <label for="form__label" class="form__label">Choose the operation you want to perform</label>
       <select name="operations-list" id="operations-list" class="form__select">
         <option value="+">+</option>
         <option value="-">-</option>
@@ -41,19 +42,16 @@
       <button class="main__buttonSubmit">Submit</button>
     </form>
     <div class="main__history">
-      <h4>RESULTS</h4>
-      <ul class="main__history-add">ADD</ul>
-      <ul class="main__history-subtract">SUBTRACT</ul>
-      <ul class="main__history-multiply">MULTIPLY</ul>
-      <ul class="main__history-divide">DIVIDE</ul>
-      <ul class="main__history-power">POWER</ul>
+      <h4 class="main__history__header">RESULTS</h4>
+      <ul class="main__history-add main__history__list">ADD</ul>
+      <ul class="main__history-subtract main__history__list">SUBTRACT</ul>
+      <ul class="main__history-multiply main__history__list">MULTIPLY</ul>
+      <ul class="main__history-divide main__history__list">DIVIDE</ul>
+      <ul class="main__history-power main__history__list">POWER</ul>
     </div>
   </main>
 
   <!-- <h1>https://www.calculators.org/games/sinal/</h1> -->
-
-
-
   <script type="module" src="./js/app.js"></script>
 </body>
 

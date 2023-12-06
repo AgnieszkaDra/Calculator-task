@@ -6,9 +6,12 @@
 .header {
     height: 50vh;
     position: relative;
-    background-color: $color-turcoise-light;
+    background-color: $color-turcoise-dark;
     @include flexAbsoluteCenter();
     flex-direction: column;
+    @include respond(max-tablet){
+      display: none;
+    }
   
     &__heading {
       color: #fff;
