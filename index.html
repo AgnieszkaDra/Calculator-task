@@ -10,55 +10,43 @@
 </head>
 
 <body class="main-content">
-  <header class="header section active" id="header">
-    <h1 class="header__heading">
-      Calculator Task
+  <header class="header">
+    <h1 class="header__heading heading">
+      <span class="header__heading--main">Calculator</span>
+      <span class="header__heading--sub tooltip">
+        <h3>Introduction</h3>
+        <i class="fa fa-info tooltip--icon"></i>
+        <span class="tooltip--content">
+          This type of calculator operates by selecting the operation and entering numbers into the inputs.
+        </span>
+      </span>
     </h1>
-    <div class="header__main">
-      <i class="fa-regular fa-circle-play header__main__start"></i>
-      <h4 class="header__main__headline">HIGH SCORE</h4>
-    </div>
   </header>
-  <main class="main section" id="main">
-    <div class="main__content content">
-      <h2 class="content__heading heading">SCORE: <span class="heading__result"></span></h2>
-      <h4 class="content__subheading"> BEST SCORE</h4>
-      <div class="content__timeline"></div>
-      <div class="content__operation operation">
-        <div class="operation__number1"></div>
-        <div class="operation__operator" name="operation" value="+">
-          <i class="fas fa-question-circle circle"></i>
-        </div>
-        <div class="operation__number2"></div>
-        <div class="operation__equal">
-          <i class="fas fa-equals"></i>
-        </div>
-        <div class="operation__result"></div>
-      </div>
-    </div>
-    <div class="main__footer footer">
-      <div class="footer__icons icons">
-        <div class="icons__home">
-          <i class="fa fa-home" aria-hidden="true"></i>
-        </div>
-        <div class="icons__refresh">
-          <i class="fa fa-refresh " aria-hidden="true"></i>
-        </div>
-      </div>
-      <div class="footer__operators">
-        <div class="footer__operators__icons">
-          <i class="fa-solid fa-plus userCheck" id='+'></i>
-        </div>
-        <div class="footer__operators__icons">
-          <i class="fa-solid fa-minus userCheck" id='-'></i>
-        </div>
-        <div class="footer__operators__icons">
-          <i class="fa-solid fa-xmark userCheck" id='*'></i>
-        </div>
-        <div class="footer__operators__icons">
-           <i class="fa-solid fa-divide userCheck" id='/'></i>
-        </div>
-      </div>
+  <main class="main">
+    <form id="form" class="main__form form">
+      <label for="form__label" class="form__label">Choice the operation you want to perform</label>
+      <select name="operations-list" id="operations-list" class="form__select">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="**">**</option>
+      </select>
+      <label>podaj number 1
+        <input type="text" name="name" required class="number1" autocomplete="off" />
+      </label>
+      <label>podaj number 2
+        <input type="text" name="name" class="number2" autocomplete="off" />
+      </label>
+      <button class="main__buttonSubmit">Submit</button>
+    </form>
+    <div class="main__history">
+      <h4>RESULTS</h4>
+      <ul class="main__history-add">ADD</ul>
+      <ul class="main__history-subtract">SUBTRACT</ul>
+      <ul class="main__history-multiply">MULTIPLY</ul>
+      <ul class="main__history-divide">DIVIDE</ul>
+      <ul class="main__history-power">POWER</ul>
     </div>
   </main>
 

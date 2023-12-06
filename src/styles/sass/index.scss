@@ -1,16 +1,9 @@
-@import 'base';
+
 @import 'abstracts';
 @import 'header';
 @import 'main';
-@import 'dialog';
+
 
 body {
   box-sizing: border-box;
-}
-
-
-
-a:hover,
-a:focus {
-  text-underline-offset: 0.25em;
 }
