@@ -25,7 +25,6 @@
   }
 }
 .header {
-  height: 50vh;
   position: relative;
   background-color: rgb(159, 189, 189);
   display: flex;
