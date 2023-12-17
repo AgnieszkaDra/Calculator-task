@@ -140,7 +140,6 @@
   background-color: rgb(159, 189, 189);
   color: white;
   display: flex;
-  height: 50vh;
   justify-content: space-around;
 }
 
@@ -177,11 +176,11 @@
 }
 
 .main__history__list {
-  text-decoration: underline;
   padding: 10px;
   background-color: rgb(159, 189, 189);
   border: 2px solid rgb(237, 202, 158);
   margin: 5px;
+  list-style: none;
 }
 
 .main__buttonSubmit {

@@ -4,7 +4,6 @@
     background-color: $color-turcoise-dark;
     color: white;
     display: flex;
-    height: 50vh;
     justify-content: space-around;
     @include respond(max-tablet){
         display: none;
@@ -34,12 +33,11 @@
         }
 
         &__list {
-            text-decoration: underline;
             padding: 10px;
             background-color: $color-turcoise-dark;
             border: 2px solid rgb(237, 202, 158);
-
             margin: 5px;
+            list-style: none;
         }
     }
 
